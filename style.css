@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#Carousel-container{
+    position: relative;
+    border: 2px solid grey;
+    height: 300px;
+    width: 400px;
+}
+.image-invisible{
+    visibility: hidden;
+    display: none;
+}
+#next-button{
+    position: absolute;
+    left: 345px;
+    top: 140px;
+}
+#previous-button{
+    position: absolute;
+    right: 345px;
+    top: 140px;
+}

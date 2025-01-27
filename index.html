@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="Carousel-container">
+        <button id="previous-button" onclick="previousImg()">PREV</button>
+        <div  id="img1">
+            <img src="assets/82daf4_ff1c0ff1c7fa4ae59bff4fae6b167008.jpg" alt="" height="300px" width="400px">
+        </div>
+        <div class="image-invisible" id="img2">
+            <img src="assets/download (1).jpeg" alt="" height="300px" width="400px">
+        </div> 
+        <div class="image-invisible" id="img3">
+            <img src="assets/download (2).jpeg" alt="" height="300px" width="400px">
+        </div>
+        <div class="image-invisible" id="img4">
+            <img src="assets/download.jpeg" alt="" height="300px" width="400px">
+        </div>
+        <div class="image-invisible" id="img5">
+            <img src="assets/download (3).jpeg" alt="" height="300px" width="400px">
+        </div>
+        <!-- remember to update total images and ids after adding new images -->
+        
+        <button id="next-button" onclick="nextImg()">NEXT</button>
+    </div>
+</body>
+</html> 
