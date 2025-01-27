@@ -14,13 +14,50 @@ body{
     visibility: hidden;
     display: none;
 }
+
 #next-button{
     position: absolute;
-    left: 345px;
-    top: 140px;
+    left: 350px;
+    top: 130px;
+    border: none;
+    padding-top: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 #previous-button{
     position: absolute;
-    right: 345px;
-    top: 140px;
+    right: 350px;
+    top: 130px;
+    border: none;
+    padding-top: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
+#nav-dots-container{
+    position: absolute;
+    top: 275px;
+    left: 140px;
+    background-color: rgba(240, 248, 255, 0.274);
+    border-radius:20px;
+}
+#nav-dots-container > .nav-btn{
+    font-size: 15px;
+    height: 20px;
+    width: 22px;
+    padding-bottom: 19px;
+}
+.nav-btn{
+    background: none;
+    border: none;
+    color: rgb(35, 32, 32);
+    border: 2px solid transparent;
+    padding: 0px;
+    
+}
+.nav-btn:hover{
+    border: 2px solid;
+    border-color: rgb(142, 142, 228);
+    border-radius: 10px;
+    background-color: rgba(228, 228, 228, 0.57);
+}
+

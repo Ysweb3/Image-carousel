@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="Carousel-container">
-        <button id="previous-button" onclick="previousImg()">PREV</button>
+        <button id="previous-button" class="nav-btn" onclick="previousImg()"><img src="assets/left-svgrepo-com.svg" alt="PREV" height="40px"></button>
         <div  id="img1">
             <img src="assets/82daf4_ff1c0ff1c7fa4ae59bff4fae6b167008.jpg" alt="" height="300px" width="400px">
         </div>
@@ -26,11 +26,10 @@
             <img src="assets/download (3).jpeg" alt="" height="300px" width="400px">
         </div>
         <!-- remember to update total images and ids after adding new images -->
-        <div id="nav-dots-container">
-            <!-- <button class="nav-dot" id="d1" onclick="navDots('1')">o</button>
-            <button class="nav-dot" id="d2" onclick="navDots('2')">o</button> -->
-        </div>
-        <button id="next-button" onclick="nextImg()">NEXT</button>
+        <span id="nav-dots-container">
+           <!-- navigation dots go here -->
+        </span>
+        <button id="next-button" class="nav-btn" onclick="nextImg()"><img src="assets/left-svgrepo-com.svg" alt="NEXT" height="40px" style="rotate:180deg ;"></button>
     </div>
 </body>
 </html> 

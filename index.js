@@ -60,7 +60,7 @@ function autoLoadNavBtn(){
     for(let i = 1; i <= totalImg;i++){
         nav[i] = document.createElement('button');
         nav[i].textContent = 'o';
-        nav[i].classList.add('nav-dot');
+        nav[i].classList.add('nav-btn');
         nav[i].id = i;
         nav[i].addEventListener('click', navDots)
         navBtnContainer.appendChild(nav[i]);
