@@ -53,6 +53,32 @@ function previousImg(){
         console.log("index:"+ index + " count:"+count)
     }
 }
-function autoload(){
-
+let nav = [];
+const navBtnContainer = document.getElementById('nav-dots-container')
+function autoLoadNavBtn(){
+    //navigation buttons are autoloaded to the dom according to the max images
+    for(let i = 1; i <= totalImg;i++){
+        nav[i] = document.createElement('button');
+        nav[i].textContent = 'o';
+        nav[i].classList.add('nav-dot');
+        nav[i].id = i;
+        nav[i].addEventListener('click', navDots)
+        navBtnContainer.appendChild(nav[i]);
+    }
 }
+function navDots(e){
+    //navigation buttons image is set based on the id
+
+    console.log(e.target.id);
+    const imgRemove = document.getElementById('img'+ index)
+    imgRemove.classList.add('image-invisible')
+
+    const imgAdd = document.getElementById('img'+ e.target.id);
+    imgAdd.classList.remove('image-invisible');
+
+    index = e.target.id;
+    count = e.target.id;
+
+    console.log("index:"+ index + " count:"+count)
+}
+autoLoadNavBtn();
