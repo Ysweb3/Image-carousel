@@ -60,4 +60,12 @@ body{
     border-radius: 10px;
     background-color: rgba(228, 228, 228, 0.57);
 }
+.bg-color{
+    border-color: rgb(61, 61, 198);
+    border-radius: 10px;
+    background-color: rgba(165, 162, 162, 0.57);
+}
+button:hover{
+    cursor: pointer;
+}
 
